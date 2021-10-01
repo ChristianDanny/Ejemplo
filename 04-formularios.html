@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mi primer formulario</h1>
+    <img src="" alt="">
+    <!--Para crear formularios en html existe la etiqueta FORM-->
+    <!--ACTION es el lugar a donde ira la informacion de mi formulario-->
+    <!--POST: es un tipo de protocolo en el cal van a viajar mis datos-->
+    <!--cuando tengamos un formulario que contenga datos sensibles este debe tener
+    el method = "post" y en caso no method="get"-->
+    <form action="registro.com" method="post">
+        <!--para poner un titulo a mi formulario debo utiliazr FIELDSET Y LEGEND-->
+        <fieldset>
+            <legend>Iniciar sesion</legend>
+            <!--hagamos un formulario de tipo iniciar sesion -->
+            <!--con correo, password y  boton para enviar los datos-->
+            <!--La etiqueta que se usa para poder crear cajas de texto es INPUT-->
+            <!--una propiedad de los INPUT son los PLACEHOLDER ademas los INPUT tambien tienen tipos
+            email, number, date, time, color-->
+            <input name="correo" placeholder="ingrese un correo" required type="email"/> <br>
+            <!--existe una etqueta br para dar un salto de linea-->
+            <input name="password" placeholder="ingrese una contraseña" required type="password"/>
+            <br>
+            <!--para haceer botones existen varias formas por ejemplo
+            si se quiere un boton que se encargue de enviar los datos este botondebe ser de tipo
+            submit-->
+            <button name="" type="submit">Iniciar Sesion</button>
+        </fieldset>
+    </form>
+    <h1>Formulario de registro</h1>
+
+    <!--quiero Nombre, Apellido, Fecha de nacimiento, Password, Celular, pais, Si esta de acuerdo con los terminos
+    y condiciones-->
+
+    <form>
+        <fieldset>Ingresa tus datos</fieldset>
+
+        <label for="nombre">Nombre</label>
+        <input 
+         id="nombre"
+         
+         name="nombre" 
+         placeholder="Ingrese su Nombre" 
+         type="text"> <br>
+
+        <label for="apellido">Apellido</label>
+        <input id="apellido" name="apellido" placeholder="Ingrese su Apellido" type="text"> <br>
+        
+        <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+        <!--min Fecha minima Y-M-D (1900-01-31)-->
+        <!--MAX Fecha maxima Y-M-D (2021-12-31)-->
+        <input id="fecha_nacimiento" name="fecha_nacimiento" type="date"> <br>
+
+        <label for="correo">Correo</label>
+        <input id="correo" name="correo" placeholder="ingrese un correo" required type="email"/> <br>
+       
+        <label for="password">Password</label>
+        <input id="password" name="password" placeholder="Ingrese su contraseña" required type="password"> <br>
+       
+        <!--Cuando pongo input de  tipo NUMBER unicamente me abre del 0 al 9-->
+        <!--Cuando pongo input de tipo tel me abre del 0 al 9 "+"" y "*""-->
+        <label for="celular">Numero de celular</label>
+        <input id="celular" name="celular" maxlength="9" placeholder="Ingrese su NºCelular" type="tel"><br>
+        <!--Cuando uno quiere buscar su pais se despliega una lista
+        la lista desplegable se llama select y los elementos de este select se llaman option-->
+        <label for="pais">Pais</label>
+        <select id="pais" name="pais">
+            <option value="" disabled selected>Seleccione un pais</option>
+            <option value="Peru">Peru</option>
+            <option value="Chile">Chile</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Alemania">Alemania</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Venezuela"> Venezuela</option>
+            <option value="Ecuador">Ecuador</option>
+        </select>
+        <br>
+        <br>
+        <label for="terminos">
+            <!--Cuando input sea de tpo checkbox o radiobutton este input se recomienda
+            ponerlo dentro de label-->
+            <input id="terminos" name="terminos" required type="checkbox">Acepta los terminos y condiciones
+        </label>
+        <br><br>
+        <label for="suscription_1">
+            <input id="suscription_1" checked name="suscription" type="radio">Suscripcion 1
+        </label>
+        <label for="suscription_2">
+            <input id="suscription_2" name="suscription" type="radio">Suscripcion 2
+        </label>
+        <label for="suscription_2">
+            <input id="suscription_2" name="suscription" type="radio">Suscripcion 3
+        </label>
+        <br>
+        <br>
+        <button >Registrarse</button>
+    </form>
+</body>
+</html>
