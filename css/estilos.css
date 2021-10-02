@@ -3,11 +3,16 @@ body{
     font-family: 'Red Hat Display', sans-serif;
     background: url("../img/fondo.svg") no-repeat;
     background-size: cover;
+    
+   
+    /*virtual height*/
+    /*height:100vh*/
+}
+.contenedor-y{
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    /*virtual height*/
-    /*height:100vh*/
 }
 .contenedor{
     /*color de fondo*/
@@ -72,13 +77,30 @@ body{
     space-evenly
     flex-end*/
     justify-content: space-between;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
     background-color: rgba(56,42,225,0.1);
-    padding: 15px;
+    padding: 12px 18px;
     border-radius: 8px;
 }
 /*para acceder a un elmento hijo simplemente debo poner el tipo de selector y asi se seleccionará*/
 .contenedor-plan a{
     text-decoration: none;
     font-size: 12px;
+}
+.plan2{
+    
+    padding-left: 20px;
+    flex-grow: 1;
+    font-size: 16px;
+}
+.plan2 h5{
+    margin-bottom: 0px;
+    margin-top: 15px;
+    font-weight: 900;
+    
+}
+.plan2 p{
+    margin-top: 5px;
+    font-weight: 400;
+    
 }
