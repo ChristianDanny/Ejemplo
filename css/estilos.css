@@ -1,0 +1,84 @@
+/*La familia font tiene que ver con todo lo referente a texto*/
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background: url("../img/fondo.svg") no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*virtual height*/
+    /*height:100vh*/
+}
+.contenedor{
+    /*color de fondo*/
+    background-color: #ffffff;
+    /*ancho del div .contenedor*/
+    /*width: px % vw*/
+    width: 450px;
+    border-radius: 8px;
+    /*padding: basicamente nos genera un espacio desde adentro hacia afuera*/
+
+    
+}
+.contenedor-texto{
+    padding: 30px;
+    text-align: center;
+    
+}
+.imagen-fondo{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.boton-pagar{
+    color:#ffffff;
+    background-color:#382ae1;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    /*shadow genera sombra*/
+    box-shadow: -4px 8px 32px -2px rgba(56,42,225,0.75);
+    /*Chrome,safari android IOS*/
+    -webkit-box-shadow: -4px 8px 32px -2px rgba(56,42,225,0.75);
+    /*firefox*/
+    -moz-box-shadow: -4px 8px 32px -2px rgba(56,42,225,0.75);;
+    /*opera*/
+    -o-box-shadow: -4px 8px 32px -2px rgba(56,42,225,0.75);;
+    /*explorer*/
+    
+}
+.boton-cancelar{
+    font-weight: 900;
+    /*El peso del texto va de 100-900 y ademas tiene bold*/
+    margin-top: 20px;
+    border: none;
+    background-color:transparent;
+    width: 100%;
+    cursor: pointer;
+}
+.contenedor-plan{
+    display: flex;
+    /*Alinear elementos de manera vertical y puede recibir 3 tipos
+    flex-start
+    center
+    flex-end*/
+    align-items:center ;
+    /*Existe justify-content es la forma de alinear mis elementos de manera horizontal
+    flex-start
+    center
+    space-between
+    space-around
+    space-evenly
+    flex-end*/
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: rgba(56,42,225,0.1);
+    padding: 15px;
+    border-radius: 8px;
+}
+/*para acceder a un elmento hijo simplemente debo poner el tipo de selector y asi se seleccionará*/
+.contenedor-plan a{
+    text-decoration: none;
+    font-size: 12px;
+}
